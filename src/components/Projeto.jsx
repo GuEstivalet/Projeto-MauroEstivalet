@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Localizacao = () => {
+const Projeto = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Localizacao = () => {
   )
 }
 
-export default Localizacao
+export default Projeto

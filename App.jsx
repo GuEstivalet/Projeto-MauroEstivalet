@@ -1,11 +1,12 @@
 import React from 'react'
 import "./App.css"
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import NotFound from './components/NotFound'
-import MainSection from "./components/MainSection"
-import Contato from "./components/Contato"
+import Footer from "./src/components/Footer"
+import Header from "./src/components/Header"
+import NotFound from "./src/components/NotFound"
+import MainSection from "./src/components/MainSection"
+import Contato from "./src/components/Contato"
+import Projeto from "./src/components/Projeto"
 
 const App = () => {
   return (
@@ -14,10 +15,10 @@ const App = () => {
       <div className='content'>
         <Header />
       <Routes>
-        <Route path='/' element={<MainSection/>}></Route>
+        <Route exact path='/' element={<MainSection/>}></Route>
         <Route path='contato' element={<Contato/>}></Route>
         <Route path='projeto' element={<Projeto/>}></Route>
-        <Route path='*' element={<NotFound />} />
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
       </div>
       <Footer/>
