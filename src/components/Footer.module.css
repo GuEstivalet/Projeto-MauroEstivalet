@@ -1,0 +1,33 @@
+.footer{
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: 13rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    background: #A82B29;
+    width: 100%;
+    max-width: 100vw;
+}
+
+h1,h2 {
+        font-size: 1rem;
+    }
+
+.footer a {
+    color: black;
+    padding: 1.1rem 0.5rem 0.5rem;
+}
+
+.footer a:hover{
+    border: 1px solid white;
+    transition: 1.5s;
+    color: white;
+    background: black;
+}
+
+.icon {
+    margin:0.1rem 3rem;
+    height: 1.4rem;
+}
