@@ -1,51 +1,42 @@
 .header {
     position: fixed;
     z-index: 100;
-    background: #A82B29;
-    width: 100%;                /* Garante que o header ocupe toda a largura */
-    max-width: 100vw;            /* Previne overflow além da largura da tela */
+    background: #A82B29;     
     height: 5rem;
-    padding: 1rem 3rem; /* Padding para espaçamento lateral e superior */
+    padding: 1rem 4rem; /* Padding para espaçamento lateral e superior */
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    border: 2px solid white;
   }
   
   .header ul {
-    display: flex;
-    flex-direction: row;
     list-style: none;
     padding: 0;
-    align-items: center; /* Centraliza links e logo verticalmente */
+    padding-right: 6rem;
+    text-align: right;
+    width: 100%;
+    border: 2px solid white;
+
   }
-  
-  .link {
+
+  .header ul li {
+    display: inline-block;
+    margin: 10px 30px;
+    border: 2px solid white;
+  }
+
+  .header ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 1rem;
-    font-family: "Krub";
-    border-radius: 4px;
-    color: black;
-    margin-right: 4rem;
   }
  
-
-  .logo {
-    margin-right:12rem;
-  }
-
-  .logo img {
-    width: 10rem;
+  .logo{
+    width: 180px;
   }
   
 
-  @media (max-width:620px) {
-    .logo {
-      margin-right: 2rem;
-    }
-
-    .link {
-      margin-right: 2rem;
-    }
-  }
   
  
   
