@@ -24,36 +24,31 @@
     margin: 10px 30px;
   }
 
-  .header ul li a {
+  .navBar ul li a{
     color: white;
     text-decoration: none;
   }
  
   .logo{
     width: 180px;
+    min-width: 180px;
   }
 
   .mobileMenu {
-    transition: opacity 0.3s ease;
     opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    z-index: 100;
-    background: #A82B29;     
     height: 5rem;
-    padding: 1rem 4rem; /* Padding para espaçamento lateral e superior */
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 100vw;
-    justify-content: space-between;
+  }
+
+  .logoMobile {
+    width: 180px;
+    min-width: 180px;
   }
 
   .mobileMenu button  {
-    padding: 15px;
+    padding: 16px;
     background: transparent;
     border: 2px solid black;
-    border-radius: 50px;
+    border-radius: 100%;
     margin-right: 7rem;
   }
 
@@ -64,19 +59,22 @@
     margin: 0;
   }
 
-  .mobileMenuOn {
-    height: 5rem;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .mobileMenuOff {
-    opacity: 0;
-  }
-
-  
-
   @media (max-width:900px) {
+    .mobileMenu {
+      opacity: 0;
+      pointer-events: none;
+      position: fixed;
+      z-index: 100;
+      background: #A82B29;     
+      height: 5rem;
+      padding: 1rem 4rem; /* Padding para espaçamento lateral e superior */
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 100vw;
+      justify-content: space-between;
+    }
+
     .navBar {
       transition: opacity 0.3s ease;
       opacity: 0;
@@ -92,24 +90,20 @@
         list-style: none;
       }
 
-      .mobileMenuOn {
-        transition: opacity 0.3s ease;
+    .mobileMenuOn {
       opacity: 1;
-      pointer-events: none;
+      pointer-events: fill;
       position: fixed;
       z-index: 100;
-      background: #A82B29;     
-      height: 5rem;
-      padding: 1rem 4rem; /* Padding para espaçamento lateral e superior */
+      background: #A82B29;
+      height: 20rem;
+      padding: 1rem 4rem;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
       width: 100%;
       max-width: 100vw;
-      }
-
-      .mobileMenuOff {
-        opacity: 0;
-        pointer-events:none ;
       }
 
       .buttonOffLista {
@@ -125,7 +119,47 @@
       .buttonOnBtn {
         transform: rotate(90deg);
         transition: transform 0.3 ease;
-      }
+        pointer-events: initial;
+        padding: 16px;
+        background: transparent;
+        border: 2px solid black;
+        border-radius: 100%;
+        margin-right: 7rem;
+        }
+
+        .mobileMenuOn ul {
+          list-style: none;
+          transform: translateX(-100%);
+        }
+
+        .mobileMenuOn ul li {
+          padding-top: 1.5rem;
+          padding-bottom: 0.5rem;
+        }
+
+        .mobileMenuOn ul li a {
+          color: white;
+        }
+
+        .buttonOffBtn :only-child{
+        transform: translateY(-1px) translateX(-1px);
+        scale: 1.3;
+        padding: 0;
+        margin: 0;
+        }
+
+        .buttonOnBtn :only-child{
+          transform: translateY(-1px) translateX(-1px);
+          scale: 1.3;
+          padding: 0;
+          margin: 0;
+          }
+
+        .logoMobile {
+          width: 180px;
+          transform: translateX(-25%);
+          padding: 1rem;
+        }
     }
   
 

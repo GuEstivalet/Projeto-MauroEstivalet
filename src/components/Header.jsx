@@ -8,6 +8,26 @@ const Header = () => {
 
   const [buttonMenu, setButtonMenu] = React.useState(false);
 
+  React.useEffect(() => {
+    // Função para verificar a largura da página
+    const checkPageWidth = () => {
+      if (window.innerWidth > 900) {
+      setButtonMenu(false);
+      } 
+    };
+
+    // Verificar ao carregar a página
+    checkPageWidth();
+
+    // Adicionar o listener ao evento de redimensionamento da janela
+    window.addEventListener('resize', checkPageWidth);
+
+    // Remover o listener ao desmontar o componente
+    return () => {
+      window.removeEventListener('resize', checkPageWidth);
+    };
+  }, []);
+
   function onClick () {
     setButtonMenu(!buttonMenu);
   }
@@ -24,14 +44,13 @@ const Header = () => {
       </nav>
 
     <nav className={buttonMenu ? `${styles.mobileMenuOn}` : `${styles.mobileMenu}`}>
-    <NavLink className={styles.logo} to='/' end><img src="./src/assets/logo-mauro.jpg" alt="Logo do consultório odontológico Mauro Estivalet" /></NavLink>
-      <ul className={buttonMenu ? `${styles.buttonOnLista}` : `${styles.buttonOffLista}`}>
-        <li><NavLink className={styles.mobileLinks} to='/' end>Início</NavLink></li>
-        <li><NavLink className={styles.mobileLinks} to='projeto'>Projeto</NavLink></li>
-        <li><NavLink className={styles.mobileLinks} to='contato'>Contato</NavLink></li>
-      </ul>
-     <button onClick={onClick} className={buttonMenu ? `${styles.buttonOnBtn}` : `${styles.buttonOffBtn}`}><FontAwesomeIcon icon={faBars} /></button>
-     
+      <NavLink className={styles.logoMobile} to='/' end><img src="./src/assets/logo-mauro.jpg" alt="Logo do consultório odontológico Mauro Estivalet" /></NavLink>
+      <button onClick={onClick} className={buttonMenu ? `${styles.buttonOnBtn}` : `${styles.buttonOffBtn}`}><FontAwesomeIcon icon={faBars} /></button>
+        <ul className={buttonMenu ? `${styles.buttonOnLista}` : `${styles.buttonOffLista}`}>
+          <li><NavLink onClick={onClick} className={styles.mobileLinks} to='/' end>Início</NavLink></li>
+          <li><NavLink onClick={onClick} className={styles.mobileLinks} to='projeto'>Projeto</NavLink></li>
+          <li><NavLink onClick={onClick} className={styles.mobileLinks} to='contato'>Contato</NavLink></li>
+        </ul>
     </nav>
    </header>
   )
