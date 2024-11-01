@@ -1,4 +1,4 @@
-.header {
+.navBar {
     position: fixed;
     z-index: 100;
     background: #A82B29;     
@@ -8,23 +8,20 @@
     align-items: center;
     width: 100%;
     max-width: 100vw;
-    border: 2px solid white;
   }
   
-  .header ul {
+  .navBar ul {
     list-style: none;
     padding: 0;
     padding-right: 6rem;
     text-align: right;
     width: 100%;
-    border: 2px solid white;
 
   }
 
-  .header ul li {
+  .navBar ul li {
     display: inline-block;
     margin: 10px 30px;
-    border: 2px solid white;
   }
 
   .header ul li a {
@@ -35,6 +32,101 @@
   .logo{
     width: 180px;
   }
+
+  .mobileMenu {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    z-index: 100;
+    background: #A82B29;     
+    height: 5rem;
+    padding: 1rem 4rem; /* Padding para espaçamento lateral e superior */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    justify-content: space-between;
+  }
+
+  .mobileMenu button  {
+    padding: 15px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-right: 7rem;
+  }
+
+  .mobileMenu button :only-child {
+    transform: translateY(-1px) translateX(-1px);
+    scale: 1.3;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobileMenuOn {
+    height: 5rem;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mobileMenuOff {
+    opacity: 0;
+  }
+
+  
+
+  @media (max-width:900px) {
+    .navBar {
+      transition: opacity 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .mobileMenu {
+        opacity: 1;
+        pointer-events:initial;
+      }
+
+      .mobileMenu ul {
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .mobileMenuOn {
+        transition: opacity 0.3s ease;
+      opacity: 1;
+      pointer-events: none;
+      position: fixed;
+      z-index: 100;
+      background: #A82B29;     
+      height: 5rem;
+      padding: 1rem 4rem; /* Padding para espaçamento lateral e superior */
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 100vw;
+      }
+
+      .mobileMenuOff {
+        opacity: 0;
+        pointer-events:none ;
+      }
+
+      .buttonOffLista {
+          opacity: 0;
+          pointer-events: none;
+      }
+
+      .buttonOffBtn {
+        opacity: 1;
+        pointer-events: initial;
+      }
+
+      .buttonOnBtn {
+        transform: rotate(90deg);
+        transition: transform 0.3 ease;
+      }
+    }
   
 
   
