@@ -12,24 +12,22 @@ const Footer = () => {
     <section className={styles.footer}>
       <div>
         <h1>Consultório Dr. Mauro Schimtz Estivalet</h1>
-        <h2>Links uteis:</h2>
-        <ul>
-        <ul>
-        <li><NavLink to='/' end>Início</NavLink></li>
-        <li><NavLink to='projeto'>Projeto</NavLink></li>
-        <li><NavLink to='contato'>Contato</NavLink></li>
-      </ul>
-        </ul>
+        <h1>Seg à Sex: 8:00 - 19:00</h1>
+        <h1>Cirurgião Dentista - CRO/RS 33333</h1>
       </div>
       <div>
       <h1>Conheça nossas redes sociais</h1>
-      <a href=''><FontAwesomeIcon className={styles.icon} icon={faWhatsapp} /></a>
-      <a href=''><FontAwesomeIcon className={styles.icon} icon={faInstagram} /></a>
-      </div>
       <div>
-        <h2>Aceitamos dinheiro, pix e cartões de crédito</h2>
-      <FontAwesomeIcon className={styles.icon} icon={faCreditCard} />
-      <FontAwesomeIcon className={styles.icon} icon={faPix} />
+        <a href=''><FontAwesomeIcon className={styles.icon} icon={faWhatsapp} /></a>
+        <a href=''><FontAwesomeIcon className={styles.icon} icon={faInstagram} /></a>
+      </div>
+      </div>
+      <div className={styles.redes}>  
+      <h2>Aceitamos dinheiro, pix e cartões de crédito</h2>
+      <div>
+        <FontAwesomeIcon className={styles.icon} icon={faCreditCard} />
+        <FontAwesomeIcon className={styles.icon} icon={faPix} />
+      </div>
       </div>
     </section>
   );

@@ -37,6 +37,7 @@
   .mobileMenu {
     opacity: 0;
     height: 5rem;
+    pointer-events: none;
   }
 
   .logoMobile {
@@ -155,6 +156,10 @@
           margin: 0;
           }
 
+          button :hover {
+            cursor: pointer;
+          }
+          
         .logoMobile {
           width: 180px;
           transform: translateX(-25%);
