@@ -1,55 +1,55 @@
-import React from 'react'
-import styles from "./Tratamentos.module.css"
+import React from 'react';
+import styles from './Tratamentos.module.css';
+import fotosData from "../json/fotos.json";
 
 const Tratamentos = () => {
-  return (
-    <div className={styles.elementoPai}>
-      <div className={styles.wrapper}>
-        <div className={styles.card}>
-          <h1>Lorem Ipsum</h1>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-        </div>
-        <div className={styles.card}>
-        <h1>Lorem Ipsum</h1>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-        </div>
-        <div className={styles.card}>
-        <h1>Lorem Ipsum</h1>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-        </div>
-        <div className={styles.card}>
-        <h1>Lorem Ipsum</h1>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-        </div>
-      </div>
-      <div className={styles.wrapper}>
-        <div className={styles.card}>
-        <h1>Lorem Ipsum</h1>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-        </div>
-        <div className={styles.card}>
-        <h1>Lorem Ipsum</h1>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-        </div>
-        <div className={styles.card}>
-        <h1>Lorem Ipsum</h1>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-        </div>
-        <div className={styles.card}>
-        <h1>Lorem Ipsum</h1>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-        </div>
-      </div>
-    </div>
-  )
-}
+  const [fotos, setFotos] = React.useState([]); 
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(null);
+  const [fotoAtiva, setFotoAtiva] = React.useState(0);
 
-export default Tratamentos
+  React.useEffect(() => {
+    // Simula a busca das fotos
+    try {
+      // Acessa as fotos dentro de "fotosData[0].fotos"
+      if (!fotosData || fotosData.length === 0 || !fotosData[0].fotos) {
+        throw new Error('Fotos não encontradas');
+      }
+      setFotos(fotosData[0].fotos); // Acessa o array de fotos dentro do JSON
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+      window.scrollTo(0, 0);
+    }
+  }, []); 
+
+  function handleClick(index) {
+    setFotoAtiva(index);
+  }
+
+  if (error) return <p>{error}</p>;
+  if (loading) return <div className="loading">Carregando...</div>;
+  if (fotos.length === 0) return null; // Verifica se há fotos
+
+  return (
+    <section className={`${styles.foto} animeLeft`}>
+      <div className={`${styles.imagesDisplay}`}>
+        <img
+          className={styles.destaque}
+          src={fotos[fotoAtiva].src} // Usa a foto ativa
+          alt={fotos[fotoAtiva].titulo} // Corrige o alt para o título correto
+        />
+        <div className={styles.wrapper}>
+          {fotos.map((foto, index) => (
+            <button key={index} onClick={() => handleClick(index)}>
+              <img src={foto.src} alt={foto.titulo} className={styles.inativas} />
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Tratamentos;

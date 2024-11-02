@@ -30,6 +30,7 @@ const Header = () => {
 
   function onClick () {
     setButtonMenu(!buttonMenu);
+    window.scrollTo(0, 0);
   }
 
   return (

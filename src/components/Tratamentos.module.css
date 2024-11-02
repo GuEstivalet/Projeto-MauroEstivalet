@@ -1,52 +1,25 @@
-/* Layout principal */
-.wrapper {
+.foto{ 
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 3 colunas no layout maior */
-    gap: 20px; /* Espaçamento entre os itens */
-    border: 1px solid red;
-    padding: 10px;
-    width: 100%;
-    max-width: 100vw;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-/* Estilizando o elemento pai */
-.elementoPai {
-    box-sizing: border-box;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Estilizando o card */
-.card {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 7rem;
     padding: 1rem;
-    border-radius: 20px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
 }
 
-/* Layout responsivo */
-@media (max-width: 900px) {
-    .wrapper {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
-    }
+button {
+    all: unset;
+    cursor: pointer; /* opcional: adiciona o ponteiro de mão ao passar o mouse */
+  }
+  
+.inativas {
+    height: 4rem;
+    width: 4rem;
+    margin: 0.5rem;
+    border: 1px solid black;
 }
 
-@media (max-width: 620px) {
-    .wrapper {
-        grid-template-columns: 1fr; /* 1 coluna em telas menores */
-    }
-
-    .card {
-        max-width: 100%;
-        margin-bottom: 10px;
-    }
+.destaque {
+    width: 20rem;
+    height: 18rem;
+    margin-bottom: 2rem;
 }

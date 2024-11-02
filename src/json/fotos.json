@@ -1,0 +1,12 @@
+[
+    {
+      "nome": "Tratamentos Odontológicos",
+      "fotos": [
+        { "src": "src/assets/Canal.jpg", "titulo": "Tratamento de canal." },
+        { "src": "src/assets/Clareamento.jpg", "titulo": "Clareamento dental." },
+        { "src": "src/assets/Aparelho.jpg", "titulo": "Aparelho ortodôntico." },
+        { "src": "src/assets/limpeza.jpg", "titulo": "Limpeza bucal." }
+      ]
+    }
+  ]
+  

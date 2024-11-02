@@ -46,11 +46,12 @@
   }
 
   .mobileMenu button  {
+    color: white;
     padding: 16px;
     background: transparent;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 100%;
-    margin-right: 7rem;
+    right: 2%;
   }
 
   .mobileMenu button :only-child {
@@ -118,12 +119,13 @@
       }
 
       .buttonOnBtn {
+        color: white;
         transform: rotate(90deg);
         transition: transform 0.3 ease;
         pointer-events: initial;
         padding: 16px;
         background: transparent;
-        border: 2px solid black;
+        border: 2px solid white;
         border-radius: 100%;
         margin-right: 7rem;
         }

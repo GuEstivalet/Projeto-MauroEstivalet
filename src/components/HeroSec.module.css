@@ -37,8 +37,9 @@
 
 /* Botão do Hero */
 .secHero a {
+    font-size: 2rem;
     font-family: 'Krub', sans-serif;
-    padding: 0.7rem 1.5rem;
+    padding: 1rem 1.5rem;
     background: #eee;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -47,7 +48,8 @@
     justify-content: center;
     align-items: center;
     width: fit-content;
-    margin: 0 auto;
+    margin: 0rem auto;
+    margin-top: 2rem;
     transition: 0.3s;
 }
 
