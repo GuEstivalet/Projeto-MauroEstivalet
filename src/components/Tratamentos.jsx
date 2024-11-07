@@ -34,6 +34,8 @@ const Tratamentos = () => {
 
   return (
     <section className={`${styles.foto} animeLeft`}>
+      <div>
+      <h1>Dentre nossos serviços, incluem:</h1>
       <div className={`${styles.imagesDisplay}`}>
         <img
           className={styles.destaque}
@@ -47,6 +49,11 @@ const Tratamentos = () => {
             </button>
           ))}
         </div>
+      </div>
+      </div>
+      <div>
+        <h1>{fotos[fotoAtiva].titulo}</h1>
+        <p>{fotos[fotoAtiva].texto}</p>
       </div>
     </section>
   );

@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       </div>
       <div className={styles.redes}>  
-      <h2>Aceitamos dinheiro, pix e cartões de crédito</h2>
+      <h2>Aceitamos dinheiro, pix e cartões (débito)</h2>
       <div>
         <FontAwesomeIcon className={styles.icon} icon={faCreditCard} />
         <FontAwesomeIcon className={styles.icon} icon={faPix} />

@@ -39,7 +39,7 @@ const Header = () => {
       <NavLink className={styles.logo} to='/' end><img src="./src/assets/logo-mauro.jpg" alt="Logo do consultório odontológico Mauro Estivalet" /></NavLink>
       <ul>
         <li><NavLink className={styles.link} to='/' end>Início</NavLink></li>
-        <li><NavLink className={styles.link} to='projeto'>Projeto</NavLink></li>
+        <li><NavLink className={styles.link} to='curso'>Curso</NavLink></li>
         <li><NavLink className={styles.link} to='contato'>Contato</NavLink></li>
       </ul>
       </nav>
@@ -49,7 +49,7 @@ const Header = () => {
       <button onClick={onClick} className={buttonMenu ? `${styles.buttonOnBtn}` : `${styles.buttonOffBtn}`}><FontAwesomeIcon icon={faBars} /></button>
         <ul className={buttonMenu ? `${styles.buttonOnLista}` : `${styles.buttonOffLista}`}>
           <li><NavLink onClick={onClick} className={styles.mobileLinks} to='/' end>Início</NavLink></li>
-          <li><NavLink onClick={onClick} className={styles.mobileLinks} to='projeto'>Projeto</NavLink></li>
+          <li><NavLink onClick={onClick} className={styles.mobileLinks} to='curso'>Curso</NavLink></li>
           <li><NavLink onClick={onClick} className={styles.mobileLinks} to='contato'>Contato</NavLink></li>
         </ul>
     </nav>

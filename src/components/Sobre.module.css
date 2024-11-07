@@ -1,4 +1,4 @@
-.foto{ 
+.sobre {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -11,26 +11,9 @@
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    all: unset;
-    cursor: pointer; /* opcional: adiciona o ponteiro de mão ao passar o mouse */
-  }
-  
-.inativas {
-    height: 4rem;
-    width: 4rem;
-    margin: 0.5rem;
-    border: 1px solid black;
-}
-
-.destaque {
-    width: 29rem;
-    height: 18rem;
-    margin-bottom: 2rem;
-}
 
 @media (max-width: 900px){
-    .foto {
+    .sobre {
         grid-template-columns: 1fr; 
     }
 }

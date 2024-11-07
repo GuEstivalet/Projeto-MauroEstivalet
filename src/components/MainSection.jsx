@@ -4,6 +4,7 @@ import Localizacao from "./Localizacao"
 import Head from './Head'
 import HeroSec from "./HeroSec"
 import Tratamentos from './Tratamentos'
+import Sobre from './Sobre'
 
 const MainSection = () => {
   return (
@@ -11,6 +12,7 @@ const MainSection = () => {
       <Head title="Dr. Mauro Estivalet | Início" description='Início página do Dr. Mauro Estivalet' />
       <HeroSec/>
       <Tratamentos/>
+      <Sobre/>
       <Localizacao/>
     </div>
   )

@@ -6,7 +6,7 @@ import Header from "./src/components/Header"
 import NotFound from "./src/components/NotFound"
 import MainSection from "./src/components/MainSection"
 import Contato from "./src/components/Contato"
-import Projeto from "./src/components/Projeto"
+import Curso from './src/components/Curso'
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
       <Routes>
         <Route exact path='/' element={<MainSection/>}></Route>
         <Route path='contato' element={<Contato/>}></Route>
-        <Route path='projeto' element={<Projeto/>}></Route>
+        <Route path='curso' element={<Curso/>}></Route>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
       </div>
