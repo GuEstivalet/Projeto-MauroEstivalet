@@ -2,10 +2,10 @@
     {
       "nome": "Tratamentos Odontológicos",
       "fotos": [
-        { "src": "src/assets/Canal.jpg", "titulo": "Tratamento de canal.","texto": "texto." },
-        { "src": "src/assets/Clareamento.jpg", "titulo": "Clareamento dental.","texto": "texto."},
-        { "src": "src/assets/Aparelho.jpg", "titulo": "Aparelho ortodôntico." , "texto": "texto."},
-        { "src": "src/assets/limpeza.jpg", "titulo": "Limpeza bucal." , "texto": "texto."}
+        { "src": "src/assets/Canal.jpg", "titulo": "Tratamento de canal","texto": "O tratamento de canal é realizado quando a polpa do dente está inflamada ou infectada, geralmente causado por cáries profundas ou traumas. O procedimento visa remover o tecido danificado, desinfetar a área e selar o canal, preservando a estrutura do dente e eliminando a dor." },
+        { "src": "src/assets/Clareamento.jpg", "titulo": "Clareamento dental","texto": "O clareamento dental é um procedimento estético que utiliza produtos específicos para remover manchas superficiais e profundas dos dentes, restaurando sua cor natural ou tornando-os mais brancos, melhorando significativamente o sorriso do paciente."},
+        { "src": "src/assets/Aparelho.jpg", "titulo": "Aparelho ortodôntico" , "texto": "O aparelho ortodôntico é utilizado para corrigir o posicionamento dos dentes e alinhar a mordida, promovendo uma estética mais harmoniosa e melhorando a função mastigatória. Pode ser fixo ou removível, dependendo da complexidade do caso e das necessidades do paciente."},
+        { "src": "src/assets/limpeza.jpg", "titulo": "Limpeza bucal" , "texto": "A limpeza bucal é um procedimento fundamental para remover a placa bacteriana e o tártaro acumulados nos dentes e gengivas, ajudando a prevenir cáries, gengivites e outras doenças bucais. Além disso, complementa a higiene diária, garantindo uma saúde oral prolongada."}
       ]
     }
   ]

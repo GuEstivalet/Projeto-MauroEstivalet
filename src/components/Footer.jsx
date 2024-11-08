@@ -18,15 +18,15 @@ const Footer = () => {
       <div>
       <h1>Conheça nossas redes sociais</h1>
       <div>
-        <a href=''><FontAwesomeIcon className={styles.icon} icon={faWhatsapp} /></a>
-        <a href=''><FontAwesomeIcon className={styles.icon} icon={faInstagram} /></a>
+        <a className={styles.link} href=''><FontAwesomeIcon className={styles.icon}  icon={faWhatsapp} /></a>
+        <a className={styles.link} href=''><FontAwesomeIcon className={styles.icon}  icon={faInstagram} /></a>
       </div>
       </div>
-      <div className={styles.redes}>  
-      <h2>Aceitamos dinheiro, pix e cartões (débito)</h2>
-      <div>
-        <FontAwesomeIcon className={styles.icon} icon={faCreditCard} />
-        <FontAwesomeIcon className={styles.icon} icon={faPix} />
+      <div>  
+      <h1>Aceitamos dinheiro, pix e cartões (débito)</h1>
+      <div className={styles.pagamentos}>
+        <div className={styles.link}><FontAwesomeIcon className={styles.icon} icon={faCreditCard} /></div>
+        <div className={styles.link}><FontAwesomeIcon className={styles.icon} icon={faPix} /></div>
       </div>
       </div>
     </section>

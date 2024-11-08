@@ -51,7 +51,7 @@ const Tratamentos = () => {
         </div>
       </div>
       </div>
-      <div>
+      <div className={styles.texto}>
         <h1>{fotos[fotoAtiva].titulo}</h1>
         <p>{fotos[fotoAtiva].texto}</p>
       </div>

@@ -11,6 +11,19 @@
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.cursosec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    margin: 5%;
+    background: #eee;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .curso p {
     font-size: 1.6rem;
     text-align: justify;
@@ -21,6 +34,16 @@
 @media (max-width: 900px){
     .curso {
         grid-template-columns: 1fr; 
-        margin-top: 10rem;
+        margin-top: 9rem;
+    }
+
+    .cursosec {
+        grid-template-columns: 1fr; 
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .curso p {
+        font-size: 0.9rem;
     }
 }

@@ -32,5 +32,6 @@ button {
 @media (max-width: 900px){
     .foto {
         grid-template-columns: 1fr; 
+        margin: 2rem 1rem;
     }
 }
