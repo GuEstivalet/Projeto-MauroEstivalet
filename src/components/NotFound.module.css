@@ -1,13 +1,43 @@
 .notfound {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding-top: 7rem;
-    margin: 1rem 2rem
+    gap:3rem;
+    margin-top: 8rem;
+    margin: 8rem 2rem;
+}
+
+.notfound h1 {
+    font-size: 2rem;
 }
 
 .notfound img {
-    height: 25rem;
-    border: 2px solid #eee;
-    padding: .2rem;
+    max-height: 27rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.notfound a {
+    font-size: 1rem;
+    font-family: 'Krub', sans-serif;
+    padding: 1rem 1.5rem;
+    background: #eee;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+    margin-top: 2rem;
+    transition: 0.3s;
+}
+
+.notfound a:hover {
+    background: #aaa;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .notfound {
+        margin: 9rem 2rem;
+        margin-top: 14rem;
+    }
 }
