@@ -14,6 +14,11 @@
     justify-items: center;
 }
 
+.imageBox {
+    width: 70%;
+    padding: 2rem;
+}
+
 .sobre img {
     width: 100%;
     height: auto;
@@ -62,6 +67,10 @@
         padding: 0;
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    .imageBox {
+        width: 70%;
     }
 
     .sobre p {

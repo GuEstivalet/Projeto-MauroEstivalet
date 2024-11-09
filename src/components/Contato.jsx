@@ -15,8 +15,9 @@ const Contato = () => {
       <div>
       <h1>Entre em contato:</h1>
       <ul className={styles.dados}>
-        <li>@drmauroestivalet</li>
-        <li>(53)9999-9999</li>
+        <li>Instagram: @drmauroestivalet</li>
+        <li>Whatsapp: (53)98154-1994</li>
+        <li>Telefone: 3227-0155</li>
       </ul>
       </div>
     </section>

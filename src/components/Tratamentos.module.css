@@ -15,17 +15,17 @@
     align-items: center;
 }
 
-h1 {
+.foto h1 {
     font-size: 2rem;
     margin: 1rem 0;
 }
 
-p{
+.foto p{
     font-size: 1.6rem;
     text-align: justify;
 }
 
-button {
+.foto button {
     all: unset;
     cursor: pointer; /* opcional: adiciona o ponteiro de mão ao passar o mouse */
   }
@@ -45,7 +45,7 @@ button {
 
 @media (max-width: 900px){
     .foto {
-        gap: 3rem;
+        gap: 2rem;
         grid-template-columns: 1fr; 
         width: 90%;
         max-width: 87vw;

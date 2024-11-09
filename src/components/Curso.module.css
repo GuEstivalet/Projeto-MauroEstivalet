@@ -29,6 +29,11 @@
     text-align: justify;
 }
 
+.cursosec p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
 
 
 @media (max-width: 900px){
@@ -44,6 +49,10 @@
     }
 
     .curso p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+
+    .cursosec p {
+        font-size: 1rem;
     }
 }
