@@ -22,6 +22,7 @@
   .navBar ul li {
     display: inline-block;
     margin: 10px 30px;
+    font-size: 1.5rem;
   }
 
   .navBar ul li a{
@@ -38,6 +39,11 @@
     opacity: 0;
     height: 5rem;
     pointer-events: none;
+  }
+
+  .mobileMenuOn ul li {
+    transform: translateX(20px);
+    font-size: 1.4rem;
   }
 
   .logoMobile {

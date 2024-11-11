@@ -16,12 +16,12 @@
 .footer h1 {
         font-size: 1.6rem;
         margin-bottom: 1rem;
-    }
+}
 
 .footer a {
     color: black;
     padding: 1rem 2rem;
-    margin: 1rem;
+    margin: 0.4rem;
     border-radius: 20px;
 }
 
@@ -41,6 +41,7 @@
     height: 1.8rem;
     transform: translateY(5px);
 }
+
 
 .pagamentos {
     display: flex;

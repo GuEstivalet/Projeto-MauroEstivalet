@@ -4,9 +4,8 @@
     max-width: 95vw;
     width: 80%;
     gap: 3rem;
-    margin-top: 7rem;
-    padding: 3rem;
-    margin: 2rem 5%;
+    padding: 5rem;
+    margin: 2rem auto;
     background: #eee;
     border-radius: 20px;
     align-items: center;
@@ -17,55 +16,68 @@
 
 .foto h1 {
     font-size: 2rem;
-    margin: 1rem 0;
+    margin: 1rem 0; 
 }
 
 .foto p{
     font-size: 1.6rem;
     text-align: justify;
+    margin: 1rem 0;
+    
+    
 }
 
 .foto button {
     all: unset;
-    cursor: pointer; /* opcional: adiciona o ponteiro de mão ao passar o mouse */
+    cursor: pointer;
   }
-  
+
+.imagesDisplay {
+    width: 70%;
+    padding: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
 .inativas {
-    height: 4rem;
-    width: 4rem;
-    margin: 0.5rem;
+    padding: 0;
+    height: 5rem;
+    width: 5rem;
     border: 1px solid black;
 }
 
 .destaque {
-    width: 29rem;
-    height: 18rem;
+    height: 24rem;
+    width: 32rem;
     margin-bottom: 2rem;
 }
 
 @media (max-width: 900px){
     .foto {
-        gap: 2rem;
         grid-template-columns: 1fr; 
         width: 90%;
-        max-width: 87vw;
+        max-width: 80vw;
         margin: 1.5rem 1.5rem;
-        padding: 1rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding: 3rem 1rem;
+    }
+
+    .texto {
+        padding: 1.5rem;
     }
 
     .foto p {
         font-size: 1.2rem;
-        max-width: 70%;
+        max-width: 100%;
     }
 
     .destaque {
-        width: 90%;
-        height: 90%;
+        height: 15rem;
+        width: 20rem;
         border-radius: 10px;
         object-fit: cover;
-        max-width: 200px;
-        margin: 2rem;
+        margin: 2rem auto;
     }
 }

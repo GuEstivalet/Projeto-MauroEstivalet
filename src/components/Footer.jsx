@@ -13,11 +13,11 @@ const Footer = () => {
       <div>
         <h1>Consultório Dr. Mauro Schimtz Estivalet</h1>
         <h1>Seg à Sex: 8:00 - 19:00</h1>
-        <h1>Cirurgião Dentista - CRO/RS 33333</h1>
+        <h1>Cirurgião Dentista - CRO/RS 9596</h1>
       </div>
       <div>
       <h1>Conheça nossas redes sociais</h1>
-      <div>
+      <div className={styles.redes}>
         <a className={styles.link} href=''><FontAwesomeIcon className={styles.icon}  icon={faWhatsapp} /></a>
         <a className={styles.link} href=''><FontAwesomeIcon className={styles.icon}  icon={faInstagram} /></a>
       </div>

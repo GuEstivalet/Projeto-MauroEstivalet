@@ -4,9 +4,8 @@
     max-width: 95vw;
     width: 80%;
     gap: 3rem;
-    padding: 3rem;
-    margin-top: 7rem;
-    margin: 2rem 5%;
+    padding: 5rem;
+    margin: 2rem auto;
     background: #eee;
     border-radius: 20px;
     align-items: center;
@@ -63,10 +62,11 @@
         grid-template-columns: 1fr; 
         width: 90%;
         max-width: 87vw;
-        margin: 1.5rem 1.5rem;
+        margin: 2rem 1.5rem;
         padding: 0;
         padding-top: 3rem;
         padding-bottom: 3rem;
+        align-items: center;
     }
 
     .imageBox {
@@ -76,6 +76,7 @@
     .sobre p {
         font-size: 1.2rem;
         max-width: 70%;
+        padding: 1.5rem;
     }
 
     .sobre img {
