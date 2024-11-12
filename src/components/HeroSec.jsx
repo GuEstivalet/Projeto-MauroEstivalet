@@ -6,7 +6,7 @@ const SecHero = () => {
     <section className={`${styles.secHero} animeLeft`}>
       <div>
           <h1>Qual foi a última vez que fostes ao dentista?</h1>
-          <a href="/">Agende sua visita aqui!</a> 
+          <a href="https://w.app/furjGk">Agende sua visita aqui!</a> 
         </div>
     </section>
   );

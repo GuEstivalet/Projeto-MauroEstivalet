@@ -18,8 +18,8 @@ const Footer = () => {
       <div>
       <h1>Conheça nossas redes sociais</h1>
       <div className={styles.redes}>
-        <a className={styles.link} href=''><FontAwesomeIcon className={styles.icon}  icon={faWhatsapp} /></a>
-        <a className={styles.link} href=''><FontAwesomeIcon className={styles.icon}  icon={faInstagram} /></a>
+        <a className={styles.link} href='https://w.app/furjGk'><FontAwesomeIcon className={styles.icon}  icon={faWhatsapp} /></a>
+        <a className={styles.link} href='https://www.instagram.com/drmauroestivalet/'><FontAwesomeIcon className={styles.icon}  icon={faInstagram} /></a>
       </div>
       </div>
       <div>  

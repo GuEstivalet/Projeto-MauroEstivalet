@@ -68,9 +68,24 @@
         padding: 1.5rem;
     }
 
+    .foto h1 {
+        padding: 0 1.5rem;
+    }
+
     .foto p {
         font-size: 1.2rem;
         max-width: 100%;
+    }
+
+    .inativas {
+        margin: 0.2rem auto;
+        height:3rem ;
+        width: 3rem;
+    }
+
+    .imagesDisplay {
+        width: 70%;
+        margin: 0.5rem auto;
     }
 
     .destaque {
@@ -80,4 +95,5 @@
         object-fit: cover;
         margin: 2rem auto;
     }
+
 }
