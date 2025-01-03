@@ -1,10 +1,10 @@
 .mapa {
-    height: auto; /* Deixe o navegador calcular a altura de acordo com a proporção da largura */
-    max-width: 95vw; /* Máxima largura: 95% da largura da janela */
-    width: 90%; /* O mapa ocupa 90% da largura do elemento pai */
+    height: auto;
+    max-width: 95vw;
+    width: 90%;
     display: inline-block; 
-    box-sizing: border-box; /* Inclui padding e border no tamanho total */
-    margin: 2rem 5%; /* Centraliza o mapa horizontalmente e ajusta o espaçamento */
+    box-sizing: border-box;
+    margin: 2rem 5%; 
     border: 2px solid black;
 }
 

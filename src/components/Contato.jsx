@@ -11,7 +11,7 @@ const Contato = () => {
   return (
     <section className={`${styles.contato} animeLeft`}>
       <Head title="Dr. Mauro Estivalet | Contato" description='Entre em contato' />
-      <img src='src/assets/contato-image.jpg' alt="imagem"/>
+      <img src='/assets/contato-image.jpg' alt="imagem"/>
       <div>
       <h1>Entre em contato:</h1>
       <ul className={styles.dados}>

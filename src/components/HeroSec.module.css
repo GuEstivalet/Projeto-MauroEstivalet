@@ -1,28 +1,44 @@
 .secHero {
+    position:relative;
     height: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     box-sizing: border-box;
-    padding-bottom: 5rem;
     width: 100%;
     max-width: 100vw;
-    border-bottom: 3px solid red;
-    background-image: url('src/assets/hero-image.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: grey;
+    margin-bottom: 6rem;
+    border: 2px solid yellow;
+}
+
+.secHero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit:fill; 
+    z-index: -1; 
+    margin-left: 2.5%;
+    padding: 0;
 }
 
 /* Título do Hero */
 .secHero h1 {
-    color: white;
+    width: 95%;
+    margin-left: 2.5%;
+    margin: 2rem 0;
+    color: white; /* Texto branco */
     font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
     text-align: center;
-    margin-bottom: 0.5rem;
+    z-index: 1; /* Garante que o texto fique acima da imagem */
+    text-shadow: 2px 2px 4px black, -2px -2px 4px black; /* Borda preta ao redor do texto */
+
 }
 
 /* Parágrafos do Hero */
@@ -54,31 +70,36 @@
     background: #aaa;
     color: white;
 }
-
-/* Responsividade para Tablets */
 @media (max-width: 768px) {
     .secHero {
         flex-direction: column;
-        padding: 1rem;
+        height: auto;
+        max-width: 100vw;
+        width: 98%;
+        box-sizing: border-box;
     }
 
+
     .secHero img {
-        height: 15rem;
+        padding-top: 10%;
+        max-width: 92%;
+        padding-left: 2%;
     }
 
     .secHero h1 {
+        padding-top: 20rem;
         font-size: 2.5rem;
+    }
+
+    .secHero a {
+        font-size: 1.5rem;
     }
 }
 
 /* Responsividade para Dispositivos Pequenos */
 @media (max-width: 480px) {
     .secHero {
-        padding: 0.5rem;
-    }
-
-    .secHero img {
-        height: 12rem;
+        max-width: auto;
     }
 
     .secHero h1 {
@@ -86,6 +107,7 @@
     }
 
     .secHero a {
-        padding: 0.5rem 0.8rem;
+        padding: 0.1rem 0.8rem;
+        margin-bottom: 2rem;
     }
 }

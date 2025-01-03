@@ -16,7 +16,6 @@
     padding-right: 6rem;
     text-align: right;
     width: 100%;
-
   }
 
   .navBar ul li {
@@ -88,6 +87,7 @@
       opacity: 0;
       pointer-events: none;
     }
+
     .mobileMenu {
         opacity: 1;
         pointer-events:initial;
