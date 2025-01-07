@@ -1,4 +1,11 @@
 .mainSection {
     min-width: 100vh;
-    padding-top: 8rem;
+    padding-top: 5rem;
+}
+
+@media (max-width: 700px){
+    .mainSection {
+        min-width: 100vh;
+        padding-top: 6rem;
+    }
 }

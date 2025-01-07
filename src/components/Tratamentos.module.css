@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
     max-width: 95vw;
     width: 80%;
-    gap: 3rem;
+    gap:0rem;
     padding: 5rem;
     margin: 2rem auto;
     background: #eee;
@@ -16,7 +16,7 @@
 
 .foto h1 {
     font-size: 2rem;
-    margin: 1rem 0; 
+    margin: 0rem 0; 
 }
 
 .foto p{
@@ -40,6 +40,7 @@
 .wrapper {
     display: flex;
     justify-content: space-around;
+    gap: 0.8rem;
 }
 
 .inativas {
@@ -57,11 +58,17 @@
 
 @media (max-width: 900px){
     .foto {
-        grid-template-columns: 1fr; 
+        padding: 1rem;
+        gap: 3rem;
         width: 90%;
-        max-width: 80vw;
+        max-width: 87vw;
         margin: 1.5rem 1.5rem;
-        padding: 3rem 1rem;
+        grid-template-columns: 1fr; 
+        display: inline-block; 
+        box-sizing: border-box;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        align-items: center;
     }
 
     .texto {
@@ -86,14 +93,22 @@
     .imagesDisplay {
         width: 70%;
         margin: 0.5rem auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .destaque {
         height: 15rem;
         width: 20rem;
         border-radius: 10px;
-        object-fit: cover;
         margin: 2rem auto;
+    }
+
+    .wrapper {
+        justify-content: space-between ;
+        margin: 0.5rem auto;
+        gap: 0.8rem;
     }
 
 }

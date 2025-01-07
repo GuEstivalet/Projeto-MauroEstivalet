@@ -45,7 +45,7 @@ const Header = () => {
       </nav>
 
     <nav className={buttonMenu ? `${styles.mobileMenuOn}` : `${styles.mobileMenu}`}>
-      <NavLink className={styles.logoMobile} to='/' end><img src="./assets/logo-mauro.jpg" alt="Logo do consultório odontológico Mauro Estivalet" /></NavLink>
+      <NavLink className={styles.logoMobile} onClick={buttonMenu ? onClick : null} to='/' end><img src="./assets/logo-mauro.jpg" alt="Logo do consultório odontológico Mauro Estivalet" /></NavLink>
       <button onClick={onClick} className={buttonMenu ? `${styles.buttonOnBtn}` : `${styles.buttonOffBtn}`}><FontAwesomeIcon icon={faBars} /></button>
         <ul className={buttonMenu ? `${styles.buttonOnLista}` : `${styles.buttonOffLista}`}>
           <li><NavLink onClick={onClick} className={styles.mobileLinks} to='/' end>Início</NavLink></li>

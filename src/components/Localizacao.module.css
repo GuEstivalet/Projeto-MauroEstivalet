@@ -11,12 +11,12 @@
 
 h1 {
     margin: 2rem 5%;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     display: inline-block;
 }
 
 
-@media (max-width:700px) {
+@media (max-width:760px) {
     .mapa {
         width: 90%;
         max-width: 87vw;
